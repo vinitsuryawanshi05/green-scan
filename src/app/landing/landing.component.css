@@ -1,0 +1,184 @@
+/* 🌿 Navbar Styling */
+.navbar {
+    background: #10451d; /* Dark Green */
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0 15px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .navbar a:hover {
+    color: #b2ff59; /* Light Green */
+  }
+  
+  /* 🌿 Hero Section */
+  .hero-image {
+    width: 260px; /* Adjust as needed */
+    height: auto;
+    margin-right: 40px; /* Space between logo and text */
+    position: absolute;
+    left: 20px; /* Moves it to the left */
+  }
+
+  .hero {
+    background: linear-gradient(to right, #66bb6a, #b2ff59); /* Light Green Gradient */
+    color: #10451d; /* Dark Green Text */
+    text-align: center;
+    padding: 90px 20px;
+  }
+  
+  .hero h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .hero h2 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .hero p {
+    font-size: 1.3em;
+    font-weight: 500;
+    color: #1b5e20;
+    text-align: center;
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center content horizontally */
+    padding: 20px;
+    background: linear-gradient(to right, #a8e063, #56ab2f); /* Optional gradient */
+  }
+
+
+  /* 🌿 Image Slider Container */
+.image-slider {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    background: #f3f3f3;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* 🌿 Scrolling Images */
+  .image-slider .slider-track {
+    display: flex;
+    gap: 20px; /* Space between images */
+    animation: scroll 20s linear infinite; /* Slower speed */
+  }
+  
+  /* 🌿 Image Styling (Uniform Size) */
+  .image-slider img {
+    width: 250px;  /* Fixed width */
+    height: 300px; /* Fixed height */
+    object-fit: cover; /* Crop images properly */
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* 🌿 Keyframes for smooth scrolling */
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* Smooth transition */
+  }
+  
+  /* 🌿 Benefits Section */
+  .benefits {
+    text-align: center;
+    padding: 60px 30px;
+    background: #f1f8e9; /* Light Green Background */
+  }
+  
+  .benefits h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #2e7d32;
+  }
+  
+  .benefit-box {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .benefit {
+    width: 28%;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .benefit:hover {
+    transform: scale(1.05);
+  }
+  
+  .benefit h3 {
+    font-size: 1.8em;
+    margin-bottom: 12px;
+    color: #1b5e20;
+  }
+  
+  .benefit p {
+    font-size: 1.2em;
+    color: #555;
+  }
+  
+  /* 🌿 Footer */
+  .footer {
+    background: #10451d;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.2em;
+  }
+  
+  /* 🌿 Responsive Design */
+  @media (max-width: 768px) {
+    .benefit-box {
+      flex-direction: column;
+      align-items: center;
+    }
+    .benefit {
+      width: 85%;
+    }
+  
+    .hero h1 {
+      font-size: 2.5em;
+    }
+  
+    .hero p {
+      font-size: 1.1em;
+    }
+  
+    .navbar {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  

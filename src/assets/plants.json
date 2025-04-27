@@ -1,0 +1,15 @@
+[
+    {
+      "id": 1,
+      "name": "Aloe Vera",
+      "description": "A medicinal plant known for its healing properties.",
+      "image": "assets/aloe_vera.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Tulsi",
+      "description": "A sacred plant used in Ayurveda.",
+      "image": "assets/tulsi.jpg"
+    }
+  ]
+  
