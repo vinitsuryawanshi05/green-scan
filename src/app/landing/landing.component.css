@@ -69,41 +69,41 @@
   }
 
 
-  /* 🌿 Image Slider Container */
+ /* 🌿 Image Slider Container */
 .image-slider {
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    position: relative;
-    background: #f3f3f3;
-    padding: 15px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  /* 🌿 Scrolling Images */
-  .image-slider .slider-track {
-    display: flex;
-    gap: 20px; /* Space between images */
-    animation: scroll 20s linear infinite; /* Slower speed */
-  }
-  
-  /* 🌿 Image Styling (Uniform Size) */
-  .image-slider img {
-    width: 250px;  /* Fixed width */
-    height: 300px; /* Fixed height */
-    object-fit: cover; /* Crop images properly */
-    border-radius: 10px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* 🌿 Keyframes for smooth scrolling */
-  @keyframes scroll {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); } /* Smooth transition */
-  }
-  
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  background: #f3f3f3;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 🌿 Scrolling Images */
+.image-slider .slider-track {
+  display: flex;
+  gap: 20px; /* Space between images */
+  animation: scroll 40s linear infinite; /* Adjust speed to ensure smooth scrolling */
+}
+
+/* 🌿 Image Styling (Uniform Size) */
+.image-slider img {
+  width: 250px;  /* Fixed width */
+  height: 300px; /* Fixed height */
+  object-fit: cover; /* Crop images properly */
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 🌿 Keyframes for smooth scrolling */
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); } /* Ensures scrolling across all 10 images */
+}
+
   /* 🌿 Benefits Section */
   .benefits {
     text-align: center;

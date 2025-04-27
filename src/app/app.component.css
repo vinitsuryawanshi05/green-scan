@@ -1,3 +1,4 @@
+
 /* Reset Styles */
 * {
     margin: 0;
@@ -60,3 +61,48 @@
     }
   }
   
+  /* */
+  /* Navbar Styles */
+
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  color: white;
+  padding: 10px;
+  background-color: #19c745;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover {
+  background-color: #19d55e;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #08ab23;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(14, 198, 20, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #16a548;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
