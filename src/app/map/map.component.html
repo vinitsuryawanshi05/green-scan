@@ -15,6 +15,8 @@
       position: relative;
       width: 768px;  /* Map image width */
       margin: 20px auto;
+      border: 2px solid #006400;  /* Adds a green border (you can change the color) */
+  border-radius: 10px;
     }
     .map-container img {
       width: 100%;
@@ -43,11 +45,24 @@
       background-color: #228B22;
       box-shadow: 0 0 10px rgba(0, 100, 0, 0.7);
     }
+
+    .h3 {
+  text-align: center;        /* Centers the text horizontally */
+  font-weight: bold;         /* Makes the text bold */
+  font-size: 60px;           /* Increases the font size (adjust as needed) */
+  position: relative;        /* Ensures that top: auto works */
+  top: 110%;                  /* Vertically center it */
+  transform: translateY(-50%); /* Adjusts for perfect vertical centering */
+  top: auto;
+  left: 300px;
+  
+}
+
   </style>
 </head>
 <body>
 
-
+  
   <div _ngcontent-kpr-c7="" class="map-container">
     <img _ngcontent-kpr-c7="" src="assets/map.png" alt="Campus Map">
     
@@ -76,5 +91,9 @@
     <a _ngcontent-kpr-c7="" href="assets/details23.html" title="Banyan Tree" class="tree" style="top: 159px;left: 284px;">🌳</a>
   </div>
 
+  <div>
+    <h3>____________________________________________________Gokhale Education Society's Campus__________________________________________________</h3>
+  </div>
+  
 </body>
 </html>

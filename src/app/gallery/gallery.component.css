@@ -22,6 +22,13 @@
   border-radius: 10px;
 }
 
+.qr-buttons-container {
+  display: flex;
+  justify-content: space-between; /* Adjusts space between buttons */
+  gap: 20px; /* Optional: Adjust the space between buttons */
+  align-items: center;
+}
+
 .qr-button {
   padding: 10px 20px;
   background-color: #28a745;
@@ -29,11 +36,13 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  flex: 1; /* Optional: Makes buttons fill the container evenly */
 }
 
 .qr-button:hover {
-  background-color: #218838;
+  background-color: #218838; /* Darker green for hover effect */
 }
+
 
 /* Modal Style */
 .qr-modal {
